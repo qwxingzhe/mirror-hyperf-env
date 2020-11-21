@@ -1,10 +1,8 @@
 version: '3.4'
 services:
   hyperf:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: registry.cn-shanghai.aliyuncs.com/qwxingzhe/mirror-hyperf-env:7.4-alpine-v3.11-swoole
     ports:
       - "9501:9501"
     volumes:
-      - /mnt/hgfs/www:/opt/www
+      - /www/hyperf-project:/opt/www
