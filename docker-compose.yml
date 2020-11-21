@@ -1,0 +1,10 @@
+version: '3.4'
+services:
+  hyperf:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "9501:9501"
+    volumes:
+      - /mnt/hgfs/report-api:/opt/www
