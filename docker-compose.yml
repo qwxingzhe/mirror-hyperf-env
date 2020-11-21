@@ -7,4 +7,4 @@ services:
     ports:
       - "9501:9501"
     volumes:
-      - /mnt/hgfs/report-api:/opt/www
+      - /mnt/hgfs/www:/opt/www
